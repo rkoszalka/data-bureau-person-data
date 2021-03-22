@@ -27,7 +27,7 @@ public interface PersonDataAPI {
             @ApiResponse(code = 500, message = "Server error.")
     })
     @GetMapping(produces = "application/json")
-    ResponseEntity<PersonDataDTO> getPersonData(@PathVariable String cpfNumber);
+    ResponseEntity<PersonDataDTO> getPersonData(@PathVariable Long cpfNumber);
 
 
 }
